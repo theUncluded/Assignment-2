@@ -1,13 +1,11 @@
-function myEach(arr, callbackFunc){
-    for(let i=0;i<arr.length;i++){
-        callbackFunc()
-        console.log(arr[i])
+var numbers = [10,32,341,3,1,6];
+
+function myEach()
+{
+  const newNum = [];
+    for(let i =0; i<numbers.length; i++){
+        newNum.push(numbers[i]);
     }
+  return newNum;
 }
-
-function callbackFunc(){
-return +1;
-}
-
-let arr = [1,2,3,4]
-arr.myEach(callbackFunc());
+console.log(myEach());
